@@ -4,29 +4,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-body {
+html, body {
     font-family: Roboto;
     margin: 0;
     padding: 0;
+    height: 100%;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 .hero {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     background-color: #1F2937;
-    padding-right: 200px;
-    padding-left: 200px;
-    padding-top: 16px;
 }
 
 .top-menu {
     display: flex;
-    flex: 1;
+    align-items: center;
     justify-content: space-between;
-    align-items: flex-end;
-    width: 950px;
+    width: 1000px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 1000px;
 }
 
 .logo-text {
@@ -50,22 +60,12 @@ ul {
     gap: 16px;    
 }
 
-.hero-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-grow: 1;
-    width: 950px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
 button {
-    background: royalblue;
-    border: 1px solid royalblue;
+    background-color: #3882F6;
+    border: 1px solid #ffffff;
     color: white;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 6px;
     width: 150px;
     height: 40px;
 }
@@ -118,7 +118,10 @@ button {
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
-    padding: 60px;
+    padding: 80px;
+    width: 1000px;
+    display: flex;
+    justify-content: center ;
 }
 
 .cards {
@@ -131,6 +134,7 @@ button {
     display: flex;
     justify-content: space-evenly;
     width: 950px;
+    padding-bottom: 80px; 
 }
 
 .card-columns {
@@ -148,4 +152,54 @@ button {
     text-wrap: pretty;
     text-align: center;
 }
+
+.testimonial {
+    background-color: #E5E7EB; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
+    width: 1000px; 
+}
+
+p.author {
+    text-align: right;
+    width: 1000px;
+    justify-content: end;
+    align-items: end;
+}
+
+.signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.signup-wrapper {
+    display: flex;
+    color: white;
+    background-color: #3882F6;
+    justify-content: space-around;
+    width: 1000px;
+    padding: 60px;
+    border-radius: 8px;
+}
+
+.footer {
+    height: 72px;
+    background: #1F2937;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
